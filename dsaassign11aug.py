@@ -43,8 +43,8 @@ def preorder(root):
         s.push(root)
         root=root.left
     while s.top!=-1:
-        temp=s.pop()
-        temp=temp.right
+        root=s.pop()
+        root=root.right
     while root is not None:
         print(root.data)
         s.push(root)
